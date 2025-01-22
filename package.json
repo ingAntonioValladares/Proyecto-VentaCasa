@@ -1,0 +1,25 @@
+{
+  "name": "proyecto-venta-de-casa",
+  "version": "1.0.0",
+  "description": "Pagina web para publicitar la casa",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "dev": "gulp dev"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "SASS",
+    "GULP",
+    "JS"
+  ],
+  "author": "Antonio Valladares Briones",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^6.0.0",
+    "sass": "^1.83.4"
+  }
+}

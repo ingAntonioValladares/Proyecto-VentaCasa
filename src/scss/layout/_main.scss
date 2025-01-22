@@ -1,0 +1,70 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenido--main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include m.tablet{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.main-contenido {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(60% - 2rem);
+    align-items: center;
+    margin-bottom: 4rem;
+    a {
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2rem;
+        color: white;   
+        font-weight: 900;
+        background-color: orange;
+        padding: 1.2rem 2.5rem;
+        border: 2px solid orange;
+        border-radius: 15px;
+        &:hover {
+            background-color: rgba($color: orange, $alpha: .7);
+        }
+    }
+}
+
+.main-direccion {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 4rem;
+    @include m.grid(1,2rem);
+    @include m.celular {
+        @include m.grid(3,2rem);
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        font-weight: 900;
+        text-align: center;
+
+        span {
+            font-weight: 500;
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+}
+
+.video {
+    display: flex;
+    flex-basis: calc(40% - 2rem);
+    justify-content: center;
+    video {
+        border: 2px solid black;
+        border-radius: 15px;
+        display: block;
+        box-shadow: 5px 5px 25px 1px rgba(0,0,0,1);
+    }
+}

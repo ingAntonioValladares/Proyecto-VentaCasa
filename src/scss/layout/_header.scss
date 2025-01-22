@@ -1,0 +1,14 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header {
+    h1 {
+        text-align: center;
+        font-weight: 900;
+        color: white;
+        text-shadow: 0 0 10px orange,
+            0 0 20px orange,
+            0 0 40px orange,
+            0 0 80px orange;
+    }
+}
