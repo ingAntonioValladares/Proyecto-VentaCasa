@@ -2,7 +2,7 @@
 @use 'base/mixins' as m;
 
 .footer {
-    background-color: orange;
+    background: rgba($color: green, $alpha: .7);
     margin-top: 8rem;
     p {
         margin: 0;

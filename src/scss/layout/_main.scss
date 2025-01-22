@@ -24,12 +24,12 @@
         font-size: 2rem;
         color: white;   
         font-weight: 900;
-        background-color: orange;
+        background: rgba($color: green, $alpha: .9);
         padding: 1.2rem 2.5rem;
-        border: 2px solid orange;
+        border: 2px solid green;
         border-radius: 15px;
         &:hover {
-            background-color: rgba($color: orange, $alpha: .7);
+            background-color: rgba($color: green, $alpha: .7);
         }
     }
 }
